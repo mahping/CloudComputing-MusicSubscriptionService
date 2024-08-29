@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register User</title>
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault();
+            console.log('Form submitted!');
+        }
+    </script>
+</head>
+<body>
+    <h2>Register</h2>
+    <form id="Register" onsubmit="handleSubmit(event)">
+        Email: <input type="email" id="email" name="email" required><br>
+        Username: <input type="text" id="username" name="username" required><br>
+        Password: <input type="password" id="password" name="password" required><br>
+        <p>Already have an account? <a href="index.html">Login here</a>.</p>
+
+        <input type="submit" value="Register">
+    </form>
+
+    <script src="register.js"></script>
+</body>
+</html>

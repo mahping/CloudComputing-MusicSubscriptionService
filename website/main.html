@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome Page</title>
+    <link rel="stylesheet" href="main.css" />
+
+</head>
+<body>
+    <body>
+        <div class="navbar" id="navbar">
+        </div>
+    
+        <div class="content">
+            <h2>User Area</h2>
+            <div id="welcomeMessage">Loading user data...</div>
+
+            <h2>Subscription Area</h2>
+            <div class="table-container" id="subscriptionsTableContainer">
+                <table id="subscriptionsTable" class="table">
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Artist</th>
+                            <th>Year</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+
+            <h2>Query Area</h2>
+            <form id="musicQueryForm">
+                Title: <input type="text" id="title"><br>
+                Artist: <input type="text" id="artist"><br>
+                Year: <input type="text" id="year"><br>
+                <button type="button">Query</button>
+            </form>
+            <div id="results"></div>
+        </div>    
+        <script src="main.js"></script>
+</body>
+</html>
